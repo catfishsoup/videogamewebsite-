@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Setting head for the page. The same every page.-->
+<!-- Basic structure Head - Body -->
+ <head>
+    <meta charset="utf-8">
+    <title>Game Release</title>
+    <link href="temporary_logo.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+
+
+    /*Header Section*/ 
+    .welcome-to {
+        position: absolute;
+        top: 30%;
+        left: 1200px;
+        font-family: PoppinMedium;
+        color:white;
+    }
+
+    .game-release {
+        position:absolute;
+        top: 42%;
+        left: 55%;
+        font-family: SNESItalic;
+
+    }
+    .welcome-to, .game-release {
+        font-size: 60pt;
+    }
+
+    .website-desc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 12pt;
+        color: white;
+        font-family: PoppinThin;
+    }
+
+
+    /*Button CSS*/ 
+    .read-more {
+        position: absolute;
+        left: 61%;
+        top: 57%;
+    }
+    /************/ 
+
+
+
+
+    /*Feature Section*/ 
+
+    .feature-div {
+        position: relative;
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: 2px solid gray;
+    }
+    .feature-div > h2 {
+        font-family: SNESItalic; 
+        text-shadow: 1px 2px 5px rgba(0,0,0,.2);
+        font-size: 56pt;
+
+    }
+    .divider-line {
+        position:absolute;
+        border-top: 2px solid #7FFFD4;
+        width: 70px;
+        left: 49%;
+        bottom: 50%;
+    }
+
+    .feature-one {
+        margin: 0;
+        position: relative;
+        height: 20%;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 2px solid gray;
+    }
+
+    .feature-two {
+        margin: 0;
+        height: 20%;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 2px solid gray;
+    }
+
+    .feature-three {
+        margin: 0;
+        position: relative;
+        height: 20%;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 2px solid gray;
+    }
+
+
+    .section-text {
+        font-family: SNESItalic; 
+        font-size: 100pt; 
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+
+    }
+
+    .subsection-text {
+        text-align: center;
+        font-family: PoppinThin;
+        font-size: 12pt;
+    }
+
+     /*Game Section*/ 
+
+    .findur {
+        text-align: center;
+        font-size: 56pt;
+        font-family: SNESItalic;
+    }
+
+    .game-section {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 350px;
+        grid-gap: 30px;
+        grid-auto-flow: column;
+        justify-content: center;
+    }
+    
+    .more-button > a {
+        text-decoration: none;
+    }
+    .more-button:hover {
+        display: inline-block;
+        animation: tada 5s infinite;
+    }
+
+    .div-line2 {
+        border-right: 2px solid gray;
+        margin-right: 3px;
+    }
+    /*Container for the four column*/ 
+    .catimage {
+        display: block;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 0.2rem;
+    }
+
+
+
+
+      /*Image for each category for user to click on*/ 
+    .PC-cat {
+        background-image: url(categorypic/PC.jpg);
+        width: 250px;
+        height: 350px;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+    
+    .PS-cat {
+        background-image: url(categorypic/ps.jpg);
+        height: 350px;
+        width: 250px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .Xbox-cat {
+        background-image: url(categorypic/xbox.jpg);
+        height: 350px;
+        width: 250px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .Switch-cat {
+        background-image: url(categorypic/switch.jpg);
+        height: 350px;
+        width: 250px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .direct-text {
+        position: absolute;
+        left: 37%;
+        top: 40%;
+        z-index: 200;
+    }
+    .direct-text > a {
+        text-decoration: none;
+        color: white;
+        font-family: Kubots;
+        font-size: 20pt;
+        font-weight: bold;
+    }    
+    
+    .direct-text:hover {
+        animation: headShake 2s infinite;
+    }
+    .space-pad {
+    padding: 15px;
+    }
+    </style>
+    <script src="GameRelease.js"></script>
+ </head>
+ <body>
+<!-- Header for the page. Along with Navigation-->
+<header>
+    <div class="logo">
+       <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+     </div>
+<nav>
+    <ul class="inside-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game_list.html">Game List</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+</nav>
+</header>
+
+    <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+    <main>
+        <!-- Section 1: Focus on title and introduction -->
+        <div class="header-container">
+            <img src="Header_Image/home_welcome_picture.jpg" alt="contact-header" class="header-img">
+            <div class="welcome-to">Welcome to</div>
+            <div class="game-release" style="color: #D9D8FA;">Game Release</div>
+            <p class="website-desc">A website to help you keep track of game releases</p>
+            <div class="read-more"><a href="about.html" class="bttn-slant bttn-royal" style="text-decoration: none;">Read More</a></div>
+        </div>
+
+        <div class="space-pad"></div>
+
+        <div class="feature-div">
+            <h2>Website <span style="color:#5D3FD3">features</span></h2>
+            <div class="divider-line"></div>
+        </div>
+
+
+        <!-- Container for features of the page -->
+            <div class="feature-one" style="background-color: #D9D8FA;">
+                <div class="cifo">
+                <p class="section-text">Discover</p>
+
+                <p class="subsection-text">up-to-date game releases from multiple platforms like PC, Switch, and so on 
+                    <span class="div-line2"></span>
+                    <span class="more-button"><a href="game_list.html">More</a></span>
+                </p></div>
+            </div>
+
+            <div class="feature-two" style="background-color: #7FFFD4;">
+                <div class="cift">
+                    <p class="section-text">Find</p>
+                    <p class="subsection-text">games from genre that you love 
+                        <span class="div-line2"></span>
+                        <span class="more-button"> More</span></p>
+                </div>
+            </div>
+                
+            <div class="feature-three" style="background-color: #f9fad8;">
+                <div class="cifthree">
+                    <p class="section-text">Watch</p>
+                    <p class="subsection-text">your favorite game events to discover new game!
+                        <span class="div-line2"></span>
+                        <span class="more-button"><a href="event.html">More</a></span>
+                    </p>
+                </div>
+                </div>
+
+
+        <h3 class="findur">Find your <span style="color:#7FFFD4">game</span></h3>
+        <div class="game-section">
+
+                <div class="catimage">
+                    <div class="PC-cat">
+                        <span class="direct-text"><a href="pc.html">PC</a></span>
+                    </div>
+                </div>
+
+
+                <div class="catimage">
+                    <div class="Xbox-cat">
+                        <span class="direct-text"><a href="xbox.html">Xbox</a></span>
+                    </div>
+                </div>
+
+
+                <div class="catimage">
+                    <div class="PS-cat">
+                        <!-- This contain the image for PS category-->
+                        <span class="direct-text"><a href="ps4.html">PS4/PS5</a></span>
+                    </div>
+                </div>
+
+                <div class="catimage">
+                    <div class="Switch-cat">
+                        <span class="direct-text"><a href="switch.html">Switch</a></span>
+                    </div>
+                </div>
+
+
+
+    </div>
+    </main>
+<!-- Footer in the middle with <small> to make the text less noticable -->
+ <footer>
+        <div class="footer-div">
+            <img src="footerpic.jpg" alt="">
+            <div class="logo2"><h4>Game Release</h4></div>
+            <div class="movefoot">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game_list.html">Game List</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="movefoot2">
+                <ul>
+                <li><a href="pc.html">PC</a></li>
+                <li><a href="xbox.html">Xbox</a></li>
+                <li><a href="ps4.html">PS4/PS5</a></li>
+                <li><a href="switch.html">Switch</a></li>
+            </ul>
+            </div>
+            <div class="divider-line2"></div>
+            <div class="copyright-text">
+                <p>&copy; 2021 Game Release</p>
+            </div>
+        </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Release</title>
+        <link href="temporary_logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="GameRelease.js"></script>
+
+        <style>
+            .page-content {
+
+                display: grid;
+                position: relative;
+                grid-template-columns: 20% 80%;
+                min-height: 1000px;
+                max-width: 33%;
+                margin-top: 3em;
+                left: 33%;
+                box-shadow: 0 2px 4px 1px rgba(0,0,0,.2);
+            }
+            .col-1 {
+                position: absolute;
+
+                width: fit-content;
+                margin-top: 1em;
+                left: 3%;
+            }
+            .col-2 {
+                position: absolute;
+
+                width: fit-content;
+                margin-top: 1em;
+                left: 37%;
+            }
+            .trailer {
+                position: absolute;
+                top: 43%;
+                left: 4%;
+            }
+            
+            .game-title, .trailer, .whereto {
+                color: #5D3FD3;
+                font-size: 20pt;
+            }
+            p {
+                font-family: PoppinThin;
+                font-size: 10pt;
+            }
+            p img {
+                width: 3%;
+                padding-left: 0.1rem;
+                padding-right: 0.3rem;
+            }
+
+            .category {
+                margin-left: 0.2rem;
+            }
+
+            .category span {
+                color: #5D3FD3;
+                border: 1px solid #5D3FD3 ;
+                margin: 0.2rem;
+                border-radius: 2px;
+            }
+            .game-title, h2 {
+                font-family: PoppinMedium;
+            }
+            iframe {
+                position: absolute;
+                top: 50%;
+                left: 4%;
+            }
+            .whereto {
+                position: absolute;
+                bottom: 8%;
+                left: 4%;
+            }
+           a  {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                text-decoration: none;
+                width: fit-content;
+                height: fit-content;
+            }
+            .shop-list {
+                position: absolute;
+                bottom: 5%;
+                left: 3%;
+            }
+            .shop-list img {
+                width: 30px;
+                margin: 0.5rem;
+            }
+
+            h3 {
+                font-family: PoppinMedium;
+                width: fit-content;
+                color: #5D3FD3  ;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+              </div>
+         <nav>
+             <ul class="inside-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game_list.html">Game List</a></li>
+                     <li><a href="event.html">Event</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+         </nav>
+        </header>
+
+        <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+
+        <main>
+            <div class="page-content">
+                <div class="col-1">
+                    <img src="Game_Picture/Switch/November_2021/Isaac.png" alt="game-picture">
+                </div>
+                <div class="col-2">
+                    <h1 class="game-title">The Binding of Isaac: Repentance</h1>
+                    <p>Repentance is a new DLC for the game Binding of Isaac</p>    
+                    <p class="category"><span>PC</span><span>PS4/PS5</span><span>Xbox</span><span>Switch</span></p>
+                    <p><img src="Icons/tag.png" alt="tag-icon"><span>Action Adventure RPG Rogue-like</span></p>
+                    <h3>Price: $59.99</h3>
+                </div>
+                <a href="#" class="bttn-fill bttn-royal">Remind Me</a>
+                <h2 class="trailer">Video Trailer</h2>
+                <iframe width="770" height="350" src="https://www.youtube.com/embed/A_C90i1jVzY" 
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 class="whereto">Where to buy</h2>
+                <div class="shop-list">
+                    <img src="Icons/steam.png" alt="steam-icon">
+                    <img src="Icons/xbox.png" alt="steam-icon">
+                    <img src="Icons/switch.png" alt="steam-icon">
+                    <img src="Icons/ps.png" alt="steam-icon">
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>

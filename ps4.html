@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <title>Game Release</title>
+    <link href="temporary_logo.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="GameRelease.js"></script>
+    <style>
+        .header-container {
+            position: relative;
+        }
+        .game-release-ps {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 60pt;
+            font-family: SNESItalic;
+            color:white;
+        }
+        .grid {
+            display: grid;
+            position:relative;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            justify-content: space-between;
+            width: fit-content;
+            width: 1000px;
+            left: 30%;
+            grid-gap: 100px;
+            grid-auto-flow: column;
+            justify-content: center;
+
+        }
+        h2 {
+            position: relative;
+            left: 22%;
+            font-family: PoppinMedium;
+            font-size: 30pt;
+            color: #5D3FD3;
+        }
+        .game-content{
+
+            margin-bottom: 30px;
+            width: fit-content;
+            height: 400px;
+        }
+
+        .game-content:hover {
+            box-shadow: 0 2px 4px 1px rgba(0,0,0,.2);
+        }
+        .game-content img {
+            width: 200px;
+            height: 300px;
+        }
+        span {
+            font-family: PoppinMedium;
+        }
+        p {
+            font-family: PoppinThin;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+              </div>
+         <nav>
+             <ul class="inside-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game_list.html">Game List</a></li>
+                     <li><a href="event.html">Event</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+         </nav>
+        </header>
+
+        <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+
+
+        <main>
+            <div class="header-container">
+                <img src="Header_Image/PS.jpg" alt="contact-header" class="header-img">
+                <h1 class="game-release-ps">PS4/PS5 Game Releases</h1>
+            </div>
+
+            <h2 class="date-head">November 2021</h2>
+            <div class="grid">
+                <div class="column1">
+
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/SoN.jpg" alt="COD-picture">
+                        <p><span>Sword of the Necromancer</span><br>
+                           Release Date: Nov 1<br></p>
+                    </div>
+
+                    <div class="game-content">
+                            <img src="Game_Picture/XBOX/November_21/JP.jpg" alt="COD-picture">
+                            <p><span>Jurassic World Evolution 2</span><br>
+                               Release Date: Nov 9</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/BF2042.jpg" alt="COD-picture">
+                        <p><span>Battlefield 2042</span><br>
+                           Release Date: Nov 19</p>
+                </div>
+                </div>
+
+
+
+                <div class="column2">
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/KOC.jpg" alt="COD-picture">
+                        <p><span>Knockout City</span><br>
+                           Release Date: Nov 2</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/skyrim.jpg" alt="COD-picture">
+                        <p><span>The Elder Scrolls V: Skyrim Anniversary</span><br>
+                           Release Date: Nov 11</p>
+                </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/DD.jpg" alt="COD-picture">
+                        <p><span>Death's Door</span><br>
+                        Release Date: Nov 23</p>
+                    </div>
+                </div>
+
+
+                <div class="column3">
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/JD2022.jpg" alt="COD-picture">
+                        <p><span>Just Dance 2022</span><br>
+                           Release Date: Nov 4</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/GTAT.jpg" alt="COD-picture">
+                        <p><span>Grand Theft Auto: The Trilogy</span><br>
+                           Release Date: Nov 11</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/EG.jpg" alt="COD-picture">
+                        <p><span>Evil Genius 2: World Domination</span><br>
+                        Release Date: Nov 30</p>
+                    </div>
+                </div>
+
+
+                <div class="column4">
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/Isaac.png" alt="COD-picture">
+                        <p><span>The Binding of Isaac: Repentance</span><br>
+                           Release Date: Nov 4</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/sherlock.jpg"  alt="COD-picture">
+                        <p><span>Sherlock Holmes Chapter One</span><br>
+                           Release Date: Nov 16</p>
+                    </div>
+                </div>
+
+                <div class="column5">
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/CODV.jpg" alt="COD-picture">
+                        <p><span>Call of Duty Vanguard</span><br>
+                           Release Date: Nov 5</p>
+                    </div>
+
+                    <div class="game-content">
+                        <img src="Game_Picture/XBOX/November_21/RuinedKing.jpg"  alt="COD-picture">
+                        <p><span>Ruined King: A League of Legends...</span><br>
+                           Release Date: Nov 16</p>
+                    </div>
+                </div>
+
+            <!-- End of the grid container -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-div">
+                <img src="footerpic.jpg" alt="">
+                <div class="logo2"><h4>Game Release</h4></div>
+                <div class="movefoot">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game_list.html">Game List</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="movefoot2">
+                    <ul>
+                    <li><a href="pc.html">PC</a></li>
+                    <li><a href="xbox.html">Xbox</a></li>
+                    <li><a href="ps4.html">PS4/PS5</a></li>
+                    <li><a href="switch.html">Switch</a></li>
+                </ul>
+                </div>
+                <div class="divider-line2"></div>
+                <div class="copyright-text">
+                    <p>&copy; 2021 Game Release</p>
+                </div>
+            </div>
+     </footer>
+    </body>
+</html>

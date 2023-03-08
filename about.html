@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Release</title>
+        <link href="temporary_logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="GameRelease.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            .header-container {
+                position: relative;
+            }
+            .game-release-abt {
+                position: absolute;
+                top:30%;
+                left: 46%;
+                font-size: 60pt;
+                font-family: SNESItalic;
+                color: white;
+            }
+            p {
+                position: relative;
+                left: 40%;
+                width: 600px;
+                font-family: PoppinThin;
+            }
+            h2 {
+                font-size: 50pt;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+            h2, h3 {
+                font-family: SNESItalic;
+            }
+            p a {
+                text-decoration: none;
+                color:white;
+                background-color: #5D3FD3;
+            }
+             p a:hover {
+                background-color: #7FFFD4;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+              </div>
+         <nav>
+             <ul class="inside-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game_list.html">Game List</a></li>
+                     <li><a href="event.html">Event</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+         </nav>
+        </header>
+        <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+        <main>
+            <div class="header-container">
+                <img src="Header_Image/About.jpg" alt="contact-header" class="header-img">
+                <h1 class="game-release-abt">About Us</h1>
+            </div>
+            <h2> The website <span style="color:#5D3FD3;">purpose</span></h2>
+            <p>
+                Welcome to Game Release! This is a website that focus on updating game releases to help you track them better.
+                We focus on games that come from mainstream game publisher like Ubisoft, Sony, Microsoft, etc. on gaming platforms like
+                PC, Xbox, PlayStation, and Switch. 
+            </p>
+            <h2> The website <span style="color:#7FFFD4;">creator</span></h2>
+            <p>
+                The website is created by Nghi Nguyen. An IIT student at University of South Carolina. 
+            </p>
+            <h3>Questions or Feedback? </h3>
+            <p>Jump over to <a href="contact.html">contact</a> to get in touch with us. </p>
+        </main>
+        <footer>
+            <div class="footer-div">
+                <img src="footerpic.jpg" alt="">
+                <div class="logo2"><h4>Game Release</h4></div>
+                <div class="movefoot">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game_list.html">Game List</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="movefoot2">
+                    <ul>
+                    <li><a href="pc.html">PC</a></li>
+                    <li><a href="xbox.html">Xbox</a></li>
+                    <li><a href="ps4.html">PS4/PS5</a></li>
+                    <li><a href="switch.html">Switch</a></li>
+                </ul>
+                </div>
+                <div class="divider-line2"></div>
+                <div class="copyright-text">
+                    <p>&copy; 2021 Game Release</p>
+                </div>
+            </div>
+     </footer>
+    </body>
+</html>

@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #fbfbfb
+}
+
+/*Custom fonts*/ 
+@font-face  {
+    font-family: 'SNESItalic';
+    src: url(fonts/SnesItalic-1G9Be.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face  {
+    font-family: 'Kubots';
+    src: url(fonts/KubotsExtraLight-EaE1z.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face  {
+    font-family: 'PoppinThin';
+    src: url(fonts/Poppins-Light.ttf); 
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face  {
+    font-family: 'PoppinMedium';
+    src: url(fonts/Poppins-Medium.ttf); 
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/*--------------------------*/
+/*Header Section*/ 
+.header-container {
+    position: relative;
+    display: block;
+}
+.header-img {
+    width: 100%;
+    filter: brightness(50%);
+    overflow: hidden;
+}
+
+
+
+.dark-mode {
+    background-color: #282828;
+    color:white;
+}
+
+#scrollup {
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 15px;
+    border-radius: 200vh;
+    font-size: 12pt;
+    font-family: PoppinMedium;
+    border:none;
+    margin: 20px;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);
+    color: black;
+}
+
+#scrollup:hover {
+    text-shadow: 0 0 10px #fff;
+}
+/*--------------------------*/
+/*Changes related to navigation*/ 
+/*1. This CSS is for the nav bar background color, width, and overflow option */
+    nav {
+    background-color: #5D3FD3;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding: 0;
+    z-index: 99;
+    }
+/*2. Changes related to styling the navigation bar itself*/ 
+nav ul {
+    list-style-type: none;
+    font-family: Kubots;
+    font-size: 18pt;
+    padding: 0;
+
+}
+
+
+.inside-nav li a {
+    float: left;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    left: 41%;
+}
+
+    /*2-1. Adding animation to the hover option*/ 
+.inside-nav li a:hover {
+    animation: pulse 1s infinite;
+}
+    /*2-2. Toggle button*/ 
+/* Changing the background color */
+.toggle-button {
+    position:absolute;
+    top: 25px;
+    left: 98%;
+    height: 25px;
+    width: 25px;
+}
+
+/*--------------------------*/
+
+/*--------------------------*/
+/*Changes related to logo*/ 
+
+.logo {
+    position: absolute;
+    font-family: SNESItalic;
+    color: white;
+    bottom: 92%;
+    left: 1%;
+    font-size: 20pt;
+    z-index: 100;
+}
+
+.home-direct {
+    text-decoration:none;
+    color: white;
+}
+.logo > h1:hover {
+    text-shadow: 0 2px 4px 1px rgba(0,0,0,.2);
+    animation: bounce 1s;
+}
+
+
+
+
+/*--------------------------*/
+/*Changes related footer*/ 
+.footer-div {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position: relative;
+    padding: 0;
+}
+
+
+
+.footer-div img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo2 h4 {
+    position: absolute;
+    font-family: SNESItalic;
+    font-size: 50pt;
+    top: 17%;
+    left: 30%;
+    color: white;
+}
+
+.logo2 h4:hover {
+    text-shadow: 0 2px 4px 1px rgba(0,0,0,.2);
+    animation: bounce 1s;
+}
+
+
+
+.movefoot {
+    position: absolute;
+    top: 30%;
+    left: 49%;
+    font-size: 12pt;
+    font-family: PoppinMedium;
+}
+.movefoot ul, .movefoot2 ul {
+    list-style-type: none;
+    color: white;
+}
+.movefoot li {
+    float: left;
+    padding: 15px;
+
+}
+.movefoot li a, .movefoot2 li a {
+    color: white;
+    text-decoration: none;
+}
+
+.movefoot li:hover, .movefoot2 li:hover {
+    animation: pulse 1s infinite;
+}
+.divider-line2{
+    position: absolute;
+    width: 1000px;
+    bottom: 20%;
+    left: 28%;
+    border-bottom: 1px solid #f9fad8;
+}
+.movefoot2 ul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.movefoot2 {
+    position: absolute;
+    font-family: PoppinMedium;
+    font-size: 9pt;
+    left: 53%;
+    top: 39%;
+}
+
+
+.copyright-text {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 12pt;
+    font-family: PoppinMedium;
+    left: 28%;
+}
+
+.footer-div img {
+    filter: brightness(70%);
+}
+
+
+
+/*--------------------------*/
+/*Misc.*/ 
+
+.space-pad {
+    padding: 15px;
+}
+
+/*--------------------------*/
+/*Responsive Section*/
+
+/*Resolution 1080p*/
+@media screen and (max-width: 1920px) {
+    .logo {
+        bottom: 90%;
+    }
+    
+    /* Index.html changes */ 
+    .welcome-to {
+        left: 900px !important;
+    }
+    .welcome-to, .game-release {
+        padding-top: 10px;
+        font-size: 50pt !important;
+    }
+
+    .website-desc {
+        padding-top: 10px;
+        left: 46% !important;
+    }
+
+    .read-more {
+        top: 60% !important;
+    }
+
+    /* game_list.html changes */ 
+    .release-header {
+        left: 43% !important;
+    }
+
+    /* game_list.html changes */ 
+    .years td {
+        width: 300px !important;
+    }
+
+    .date-chart {
+        width: 800px !important;
+    }
+
+    .game-news {
+        width: 200px !important;
+        left: 75%!important;
+    }
+
+    article {
+        width: 350px !important;
+    }
+
+
+    /* contact.html changes */ 
+    .form-user {
+        height: 600px !important;
+    }
+    .feedback-grid {
+        left: 50% !important;
+    }
+    #header-text {
+        width: fit-content;
+        left: 20% !important;
+    }
+
+    #contact-desc {
+        left: 20% !important;
+    }
+
+    .other-ways {
+        left: 20% !important;
+    }
+
+    /*all the game pages changes */
+    .date-head {
+        width: fit-content;
+        left: 14% !important;
+    }
+    .grid {
+        left: 25% !important;
+    }
+
+        /* Prototype changes */ 
+        .page-content {
+            max-width: 43% !important;
+            left: 30% !important;
+            min-height: 1000px !important;
+        }
+    /* Footer changes */ 
+
+    .copyright-text {
+        bottom: 8%;
+    }
+    .movefoot2 {
+        left: 55%;
+        top: 42%;
+    }
+}
+
+/* Resolution: 720p */ 
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    .logo {
+        bottom: 85%;
+    }
+
+    .inside-nav li a {
+        left: 37%;
+    }
+
+
+    /* Index.html changes */ 
+    .welcome-to {
+        left: 600px !important;
+    }
+
+    .website-desc {
+        font-size: 9pt !important;
+        left: 42% !important;
+    }
+    .welcome-to, .game-release {
+        font-size: 30pt !important;
+    }
+
+    .read-more {
+        left: 57% !important;
+    }
+
+    /* event.html changes */ 
+    .years td {
+        width: 200px !important;
+    }
+    .game-news {
+        display: none !important;
+    }
+
+    #Event {
+        font-size: 40pt !important;
+    }
+
+
+    /* contact.html changes */ 
+    #header-text, #contact-desc, .other-ways {
+        left: 10% !important;
+    }
+
+    .feedback-grid {
+        left: 50% !important;
+    }
+
+    /*all the game pages changes */
+    .game-release-xbox, .game-release-switch, .game-release-ps {
+        left: 32% !important;
+    }
+    .game-release-pc {
+        left: 35% !important;
+    }
+    .date-head {
+        width: fit-content;
+        left: 5% !important;
+    }
+
+    .grid {
+        width: 500px !important;
+        grid-gap: 8em !important;
+    }
+
+    /* Footer changes */ 
+    .movefoot {
+        top: 10%;
+    }
+    .movefoot2{
+        top: 28%;
+        left: 57%;
+    }
+    .logo2 h4 {
+        left: 20%;
+       top: 0%;
+    }
+    .divider-line2 {
+        left: 20%;
+        width: 800px;
+    }
+
+    .copyright-text {
+        bottom: 4%;
+        left: 20%;
+    }
+}

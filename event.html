@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Game Release</title>
+    <link href="temporary_logo.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Script -->
+    <script src="GameRelease.js"></script>
+
+    <style>
+        #Event {
+            position: absolute;
+            top: 15%;
+            left: 44%;
+            color: white;
+            font-family: SNESItalic;
+            font-size: 60pt;
+        }
+        .grid-display {
+            display: grid;
+            position: relative;
+             /* border here */ 
+            grid-template-columns: 20% 40% 20%;
+            grid-template-rows: 1700px;
+        } 
+        
+        /*Year Filter Label*/ 
+        .years:hover {
+            animation: headShake 3s infinite;
+        }
+        .years td {
+            width: 500px;
+            border-bottom: 1px solid #dcdfdd;
+            font-family: PoppinMedium;
+            padding: 20px;
+            font-size: 20pt;
+        }
+
+        .years td:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            background-color: rgba(249, 250, 216, .1)
+        }
+
+        .year-filter {
+            position: absolute;
+             /* border here */ 
+            height: fit-content;
+            left:10%;
+            width: 500px;
+        }
+
+
+         .date-chart {
+            position: absolute;
+            /* border here */ 
+            height: fit-content;
+            width: fit-content;
+            left: 30%;
+        }
+        /* The whole table */
+        .event-table {
+            border-collapse:collapse;
+            border-spacing: 15px 50px;
+            width: 100%;
+        }
+
+        tr th {
+            font-family: PoppinMedium;
+            padding: 10px;
+        }
+       
+        /*Inside table labeling*/ 
+        .table-info td {
+            font-family: PoppinThin;
+            font-size: 15pt;
+            font-weight: bold;
+            padding: 15px;
+            border-bottom: 1px solid #dcdfdd;
+        }
+
+        .table-info:nth-child(2n+1) {
+            background-color: rgba(249, 250, 216, .1)
+        }
+
+        .table-info:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            background-color: rgba(249, 250, 216, .1)
+        }
+        th {
+            text-align: left;
+            background-color: #f9fad8;
+            height: 50px;
+        }
+       
+        .status1 {
+            background-color: #e11e2a;
+        }
+        .status2 {
+            background-color: #23dc4e;
+        }
+        
+        .status1, .status2 {
+            font-size: 10pt;
+            color: white;
+            border-radius: .2em;
+            padding: 3px;
+        }
+
+        .watch-icon img {
+            width: 30px;
+        }
+
+
+        /* Gaming News Section */ 
+        .game-news {
+            position: absolute;
+            width: fit-content;
+            top: 5%;
+            right: 10%;
+        }
+        
+        article {
+            width: 500px;
+            margin-bottom: 20px;
+            font-family: PoppinThin;
+            padding-left: 10px;
+            border-bottom: 1px solid #dcdfdd;
+        }
+
+        article a {
+            text-decoration: none;
+            font-family: PoppinMedium;
+            color: black;
+        }
+
+        article a:hover {
+            color: #5D3FD3;
+        }
+        
+        h2 {
+            font-family: PoppinMedium;
+        }
+    </style>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+              </div>
+         <nav>
+             <ul class="inside-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game_list.html">Game List</a></li>
+                     <li><a href="event.html">Event</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+         </nav>
+    </header>
+
+    <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+
+    <main>
+        <div class="header-container">
+            <img src="Header_Image/event.jpg" alt="contact-header" class="header-img">
+
+            <div id="Event">
+                <h1>Event
+                </h1>
+            </div>
+        </div>
+
+            <div class="space-pad"></div>
+            <div class="grid-display">
+
+            <div class="year-filter">
+                <h2 style="font-family: PoppinMedium">Event By Year</h2>
+                    <table>
+                        <tr class="years">
+                            <td>2021</td>
+                        </tr>
+                        <tr class="years">
+                            <td>2020</td>
+                        </tr>
+                        <tr class="years">
+                            <td>2019</td>
+                        </tr>
+                        <tr class="years">
+                            <td>2018</td>
+                        </tr>
+                    </table>
+                </div>
+
+            <div class="date-chart">
+                
+                <h2 style="border-bottom: 1px solid #dcdfdd ;">2021</h2>
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Where to Watch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-info">
+                            <td><img src="eventtable/steamFEB.jpg" alt="gamepicture" width="100"></td>
+                            <td>Steam Game Festival: February 2021</td>
+                            <td>February 3 - 9</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/blizzcon.jpg" alt="gamepicture" width="100"></td>
+                            <td>Blizzcon</td>
+                            <td>February 19 - 20</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/E3.jpg" alt="gamepicture" width="100"></td>
+                            <td>E3</td>
+                            <td>June 12 - 15</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/Ubisoft.jpg" alt="gamepicture" width="100"></td>
+                            <td>Ubisoft Forward</td>
+                            <td>June 12 </td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/MISC.jpg" alt="gamepicture" width="100"></td>
+                            <td>Future Game Show<br>PC Gaming Show<br>Xbox & Bethesda Game Showcase</td>
+                            <td>June 13</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/SGF.jpg" alt="gamepicture" width="100"></td>
+                            <td>KICKOFF LIVE! by Summer Game Fest</td>
+                            <td>June 10</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/Nintendo.jpg" alt="gamepicture" width="100"></td>
+                            <td>Nintendo E3 Direct + Treehouse Live</td>
+                            <td>June 15</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/SNF1.jpg" alt="gamepicture" width="100"></td>
+                            <td>Steam Next Fest</td>
+                            <td>June 16 - 22</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/EA.jpg" alt="gamepicture" width="100"></td>
+                            <td>EA Play</td>
+                            <td>July 22</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/gamescom.jpg" alt="gamepicture" width="100"></td>
+                            <td>Gamescom Xbox 2021 </td>
+                            <td>August 24</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/PS.jpg" alt="gamepicture" width="100"></td>
+                            <td>PlayStation Show Case </td>
+                            <td>September 9</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/SNF2.jpg" alt="gamepicture" width="100"></td>
+                            <td>Steam Next Fest</td>
+                            <td>October 1 - 7</td>
+                            <td><span class="status1">Finished</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                        <tr class="table-info">
+                            <td><img src="eventtable/TGA.jpg" alt="gamepicture" width="100"></td>
+                            <td>The Game Award</td>
+                            <td>December 9</td>
+                            <td><span class="status2">Upcoming</span></td>
+                            <td class="watch-icon">
+                                <img src="Icons/youtube.png" alt="youtube-icon">
+                                <img src="Icons/twitch.png" alt="youtube-icon">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="game-news">
+                <h2>Release News</h2>
+                    <article>
+                        <h3><a href="https://www.pushsquare.com/guides/upcoming-ps5-ps4-games-for-december-2021-and-january-2022" 
+                                target="_blank">Upcoming PS5, PS4 Games for December 2021 and January 2022</a></h3>
+                        <p>A small preview of what to come in December and January for PlayStation platform<br>
+                            <small>Source: PushSquare</small>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3><a href="https://www.nintendolife.com/news/2021/11/pokemons-diamond-and-pearl-remakes-become-the-second-biggest-switch-game-launch-in-japan" 
+                            target="_blank">Pokemon's Diamond & Pearl Remakes Become The Second Biggest Switch Game Launch in Japan</a></h3>
+                        <p>An article about Nintendo latest release<br>
+                            <small>Source: NintendoLife</small>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3><a href="https://screenrant.com/november-2021-video-game-release-dates-list/" 
+                            target="_blank">November 2021 Video Game Releases</a></h3>
+                        <p>Overview of releases for multiple platforms<br>
+                            <small>Source: ScreenRant</small>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3><a href="https://kotaku.com/heres-the-first-look-at-the-league-of-legends-fighting-1848099049" 
+                            target="_blank">Here's The First Look At The League of Legends Fighting Game</a></h3>
+                        <p>A sneak peek at League of Legends fighting game<br>
+                            <small>Source: Kotaku</small>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3><a href="https://gamerant.com/xbox-game-pass-exo-one-release-date/" 
+                            target="_blank">Xbox Game Pass Adding Exo One Next Week</a></h3>
+                        <p>News about the upcoming Xbox Game Pass game update<br>
+                            <small>Source: GameRant</small>
+                        </p>
+                    </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-div">
+            <img src="footerpic.jpg" alt="">
+            <div class="logo2"><h4>Game Release</h4></div>
+            <div class="movefoot">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game_list.html">Game List</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="movefoot2">
+                <ul>
+                <li><a href="pc.html">PC</a></li>
+                <li><a href="xbox.html">Xbox</a></li>
+                <li><a href="ps4.html">PS4/PS5</a></li>
+                <li><a href="switch.html">Switch</a></li>
+            </ul>
+            </div>
+            <div class="divider-line2"></div>
+            <div class="copyright-text">
+                <p>&copy; 2021 Game Release</p>
+            </div>
+        </div>
+ </footer>
+    </body>
+</html>

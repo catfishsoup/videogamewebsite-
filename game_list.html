@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Release</title>
+        <link href="temporary_logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            /*Header Styling*/
+            .release-header {
+                position: absolute;
+                top: 37%;
+                left: 45%;
+                font-size: 80pt;
+                color: white;
+                font-family: SNESItalic;
+            }
+            /* Table Styling */ 
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th{
+                text-align: left;
+                font-size: 30pt;
+                margin-bottom: 200px;
+                font-family: Kubots;
+                border-bottom: 1px solid gray;
+            }
+            th > a {
+                text-decoration: none;
+                color: #5D3FD3;
+            }
+            th > a:hover {
+                color:#7FFFD4;
+            }
+            td img {
+                width: 300px;
+                height: 400px;
+            }
+            td img {
+                margin-top: 15px;
+                margin-bottom: 2em;
+                border-radius: 1rem;
+                box-shadow: 0 2px 1px 3px rgba(0,0,0,.2);
+            }
+            td img:hover {
+                animation: shakeX 3s infinite;
+            }
+            td {
+                display:inline;
+                padding: 15px;
+            }
+            tfoot {
+                white-space: nowrap;
+            }
+            td a{                
+                font-family: PoppinMedium;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+            }
+            td a:hover {
+                color:#5D3FD3;
+            }
+        </style>
+        <script src="GameRelease.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><a href="index.html" class="home-direct">Game Release</a></h1>
+              </div>
+         <nav>
+             <ul class="inside-nav">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game_list.html">Game List</a></li>
+                     <li><a href="event.html">Event</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <input type="image" src="Icons/moon-xxl.png" name="bg-toggle" width="25" height="25" class="toggle-button" id="tgbutton" onclick="changebgColor()" alt="darkmodeicon">
+         </nav>
+        </header>
+
+
+        <button id="scrollup" onclick="scrollthepage()">Go Up</button>
+
+        <main>
+            <div class="header-container">
+                <img src="Header_Image/gamereleseheader.jpg" alt="grhead" class="header-img">
+                <div class="release-header">Release</div>
+            </div>
+
+            <div class="space-pad"></div>
+    
+            <div>
+                <table>
+                    <!-- Heading for row 1 -->
+                    <tr>
+                        <th><a href="pc.html">PC</a></th>
+                    </tr>
+                    <tbody>
+                        <!-- Content of row 1 - PC -->
+                    <tr>
+                        <td><img src="Game_Picture/300.png" alt="gamepicture"></td>
+                        <td><img src="Game_Picture/300(1).jpg" alt="gamepicture"></td>
+                        <td><img src="Game_Picture/300.jpg" alt="gamepicture"></td>
+                    </tr>
+                    <!-- Heading for row 2 -->
+                    <tr>
+                        <th><a href="xbox.html">XBOX</a></th>
+                    </tr>
+                    <!-- Content for row 2 - XBOX -->
+                        <tr>
+                            <td><img src="Game_Picture/300(1).png" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(8).jpg" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(9).jpg" alt="gamepicture"></td>
+                        </tr>
+                    <!-- Heading for row 3 -->
+                    <tr>
+                        <th><a href="ps4.html">PS4/PS5</a></th>
+                    </tr>
+                    <!-- Content for row 3 - PS4/PS5 -->
+                        <tr>
+                            <td><img src="Game_Picture/300(5).jpg" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(6).jpg" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(7).jpg" alt="gamepicture"></td>
+                        </tr>
+                    <!-- Heading for row 4 -->
+                    <tr>
+                        <th><a href="switch.html">SWITCH</a></th>
+                    </tr>
+                    <!-- Content for row 4 - Switch -->
+                        <tr>
+                            <td><img src="Game_Picture/300(2).jpg" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(3).jpg" alt="gamepicture"></td>
+                            <td><img src="Game_Picture/300(4).jpg" alt="gamepicture"></td>
+                        </tr>
+                    </tbody>
+                    <!-- Footer of the table -->
+                    <tfoot>
+                        <tr>
+                            <td>Platform to buys games</td>
+                            <td><a href="https://store.steampowered.com/">Steam</a></td>
+                            <td><a href="https://www.gog.com/">GOG</a></td>
+                            <td><a href="https://store.nintendo.com/">Nintendo</a></td>
+                            <td><a href="https://www.microsoft.com/en-us/store/top-paid/games/xbox?icid=XboxCat_QL2_DigitalGames">Microsoft Store</a></td>
+                            <td><a href="https://store.playstation.com/en-us/latest">PlayStation Store</a>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-div">
+                <img src="footerpic.jpg" alt="">
+                <div class="logo2"><h4>Game Release</h4></div>
+                <div class="movefoot">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game_list.html">Game List</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="movefoot2">
+                    <ul>
+                    <li><a href="pc.html">PC</a></li>
+                    <li><a href="xbox.html">Xbox</a></li>
+                    <li><a href="ps4.html">PS4/PS5</a></li>
+                    <li><a href="switch.html">Switch</a></li>
+                </ul>
+                </div>
+                <div class="divider-line2"></div>
+                <div class="copyright-text">
+                    <p>&copy; 2021 Game Release</p>
+                </div>
+            </div>
+     </footer>
+    </body>
+</html>
